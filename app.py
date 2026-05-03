@@ -17,8 +17,8 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     N = int(request.form['Nitrogen'])
-    P = int(request.form['Phosporous'])
-    K = int(request.form['Pottasium'])
+    P = int(request.form['Phosporus'])
+    K = int(request.form['Potassium'])
     temp = float(request.form['Temperature'])
     humidity = float(request.form['Humidity'])
     pH = float(request.form['pH'])
